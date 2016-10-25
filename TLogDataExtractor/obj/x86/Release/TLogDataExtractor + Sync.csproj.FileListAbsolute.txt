@@ -1,0 +1,11 @@
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.exe
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.pdb
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\bin\Release\TLogDataExtractor.exe.manifest
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\bin\Release\TLogDataExtractor.application
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\bin\Release\TLogDataExtractor.exe
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\bin\Release\TLogDataExtractor.pdb
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.MainForm.resources
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.Properties.Resources.resources
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor + Sync.csproj.GenerateResource.Cache
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.exe.manifest
+C:\Users\Alex Chang\Documents\GitHub\TLogDataExtractor\TLogDataExtractor\obj\x86\Release\TLogDataExtractor.application
