@@ -52,10 +52,6 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.extratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geoTagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileParametersTree = new System.Windows.Forms.TreeView();
-            this.selectedParametersTree = new System.Windows.Forms.TreeView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,9 +66,15 @@
             this.button_log = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel_extrat = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.selectedParametersTree = new System.Windows.Forms.TreeView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fileParametersTree = new System.Windows.Forms.TreeView();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel_geo.SuspendLayout();
+            this.panel_extrat.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -110,14 +112,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -125,32 +127,32 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -221,7 +223,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -244,41 +246,6 @@
             this.geoTagToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.geoTagToolStripMenuItem.Text = "Geo Tag";
             this.geoTagToolStripMenuItem.Click += new System.EventHandler(this.geoTagToolStripMenuItem_Click);
-            // 
-            // fileParametersTree
-            // 
-            this.fileParametersTree.CausesValidation = false;
-            this.fileParametersTree.Location = new System.Drawing.Point(12, 111);
-            this.fileParametersTree.Name = "fileParametersTree";
-            this.fileParametersTree.Size = new System.Drawing.Size(300, 263);
-            this.fileParametersTree.TabIndex = 1;
-            this.fileParametersTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.fileParametersTree_AfterSelect);
-            this.fileParametersTree.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.fileParametersTree_MouseDoubleClick);
-            // 
-            // selectedParametersTree
-            // 
-            this.selectedParametersTree.CausesValidation = false;
-            this.selectedParametersTree.Location = new System.Drawing.Point(318, 111);
-            this.selectedParametersTree.Name = "selectedParametersTree";
-            this.selectedParametersTree.Size = new System.Drawing.Size(304, 263);
-            this.selectedParametersTree.TabIndex = 2;
-            this.selectedParametersTree.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.selectedParametersTree_NodeMouseDoubleClick);
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(100, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Input File Parameters";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(424, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Selected Parameters";
             // 
             // contextMenuStrip1
             // 
@@ -310,8 +277,8 @@
             this.panel_geo.Controls.Add(this.textBox_log);
             this.panel_geo.Controls.Add(this.button_img);
             this.panel_geo.Controls.Add(this.button_log);
-            this.panel_geo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_geo.Location = new System.Drawing.Point(0, 24);
+            this.panel_geo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_geo.Location = new System.Drawing.Point(0, -332);
             this.panel_geo.Name = "panel_geo";
             this.panel_geo.Size = new System.Drawing.Size(634, 362);
             this.panel_geo.TabIndex = 3;
@@ -393,17 +360,58 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // panel_extrat
+            // 
+            this.panel_extrat.Controls.Add(this.label2);
+            this.panel_extrat.Controls.Add(this.selectedParametersTree);
+            this.panel_extrat.Controls.Add(this.label1);
+            this.panel_extrat.Controls.Add(this.fileParametersTree);
+            this.panel_extrat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_extrat.Location = new System.Drawing.Point(0, 30);
+            this.panel_extrat.Name = "panel_extrat";
+            this.panel_extrat.Size = new System.Drawing.Size(634, 356);
+            this.panel_extrat.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(422, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Selected Parameters";
+            // 
+            // selectedParametersTree
+            // 
+            this.selectedParametersTree.CausesValidation = false;
+            this.selectedParametersTree.Location = new System.Drawing.Point(316, 67);
+            this.selectedParametersTree.Name = "selectedParametersTree";
+            this.selectedParametersTree.Size = new System.Drawing.Size(304, 263);
+            this.selectedParametersTree.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(98, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Input File Parameters";
+            // 
+            // fileParametersTree
+            // 
+            this.fileParametersTree.CausesValidation = false;
+            this.fileParametersTree.Location = new System.Drawing.Point(10, 67);
+            this.fileParametersTree.Name = "fileParametersTree";
+            this.fileParametersTree.Size = new System.Drawing.Size(300, 263);
+            this.fileParametersTree.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 386);
-            this.Controls.Add(this.panel_geo);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.selectedParametersTree);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.fileParametersTree);
+            this.Controls.Add(this.panel_geo);
+            this.Controls.Add(this.panel_extrat);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "TLogDataExtractor + Geotag";
@@ -412,6 +420,7 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel_geo.ResumeLayout(false);
             this.panel_geo.PerformLayout();
+            this.panel_extrat.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,10 +445,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.TreeView fileParametersTree;
-        private System.Windows.Forms.TreeView selectedParametersTree;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem loadParametersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveParameterListToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -459,6 +464,11 @@
         private System.Windows.Forms.Button button_log;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Panel panel_extrat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TreeView selectedParametersTree;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TreeView fileParametersTree;
     }
 }
 

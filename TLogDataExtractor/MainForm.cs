@@ -404,10 +404,12 @@ namespace TLogDataExtractor
         private void geoTagToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel_geo.Visible = true;
+            panel_extrat.Visible = false;
         }
 
         private void extratorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panel_extrat.Visible = true;
             panel_geo.Visible = false;
         }
 
