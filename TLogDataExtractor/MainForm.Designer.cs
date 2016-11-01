@@ -389,6 +389,7 @@
             this.selectedParametersTree.Name = "selectedParametersTree";
             this.selectedParametersTree.Size = new System.Drawing.Size(304, 263);
             this.selectedParametersTree.TabIndex = 6;
+            this.selectedParametersTree.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.selectedParametersTree_NodeMouseDoubleClick);
             // 
             // label1
             // 
@@ -405,6 +406,8 @@
             this.fileParametersTree.Name = "fileParametersTree";
             this.fileParametersTree.Size = new System.Drawing.Size(300, 263);
             this.fileParametersTree.TabIndex = 5;
+            this.fileParametersTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.fileParametersTree_AfterSelect);
+            this.fileParametersTree.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.fileParametersTree_MouseDoubleClick);
             // 
             // MainForm
             // 
