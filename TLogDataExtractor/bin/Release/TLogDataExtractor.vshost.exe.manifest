@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TLogDataExtractor.exe" size="29696">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TLogDataExtractor.exe" size="30208">
       <assemblyIdentity name="TLogDataExtractor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>0DrGZCQZePdguW6VHozXplKfiB0=</dsig:DigestValue>
+        <dsig:DigestValue>+RayAzeeF+wBq0TtGYRyUA6tDPA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
