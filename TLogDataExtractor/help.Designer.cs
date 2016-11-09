@@ -1,4 +1,4 @@
-﻿namespace TLogDataExtractor
+﻿namespace TLogDataExtractorGeotagg
 {
     partial class help
     {

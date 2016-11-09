@@ -26,7 +26,7 @@ using System.Drawing.Imaging;
 using Microsoft.VisualBasic.FileIO;
 using System.Threading;
 
-namespace TLogDataExtractor
+namespace TLogDataExtractorGeotagg
 {
 
 

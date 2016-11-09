@@ -1,4 +1,4 @@
-﻿namespace TLogDataExtractor
+﻿namespace TLogDataExtractorGeotagg
 {
     partial class MainForm
     {
@@ -36,7 +36,6 @@
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,7 +98,6 @@
             this.toolStripSeparator,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -137,11 +135,6 @@
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // toolStripSeparator2
             // 
@@ -279,16 +272,16 @@
             this.panel_geo.Controls.Add(this.textBox_log);
             this.panel_geo.Controls.Add(this.button_img);
             this.panel_geo.Controls.Add(this.button_log);
-            this.panel_geo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_geo.Location = new System.Drawing.Point(0, -332);
+            this.panel_geo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_geo.Location = new System.Drawing.Point(0, 0);
             this.panel_geo.Name = "panel_geo";
-            this.panel_geo.Size = new System.Drawing.Size(634, 362);
+            this.panel_geo.Size = new System.Drawing.Size(634, 386);
             this.panel_geo.TabIndex = 3;
             this.panel_geo.Visible = false;
             // 
             // button_Sync
             // 
-            this.button_Sync.Location = new System.Drawing.Point(204, 72);
+            this.button_Sync.Location = new System.Drawing.Point(204, 98);
             this.button_Sync.Name = "button_Sync";
             this.button_Sync.Size = new System.Drawing.Size(231, 38);
             this.button_Sync.TabIndex = 7;
@@ -298,7 +291,7 @@
             // 
             // textBox_output
             // 
-            this.textBox_output.Location = new System.Drawing.Point(12, 116);
+            this.textBox_output.Location = new System.Drawing.Point(12, 142);
             this.textBox_output.Multiline = true;
             this.textBox_output.Name = "textBox_output";
             this.textBox_output.ReadOnly = true;
@@ -309,7 +302,7 @@
             // label_img
             // 
             this.label_img.AutoSize = true;
-            this.label_img.Location = new System.Drawing.Point(12, 42);
+            this.label_img.Location = new System.Drawing.Point(12, 68);
             this.label_img.Name = "label_img";
             this.label_img.Size = new System.Drawing.Size(53, 13);
             this.label_img.TabIndex = 5;
@@ -318,7 +311,7 @@
             // label_log
             // 
             this.label_log.AutoSize = true;
-            this.label_log.Location = new System.Drawing.Point(12, 15);
+            this.label_log.Location = new System.Drawing.Point(12, 41);
             this.label_log.Name = "label_log";
             this.label_log.Size = new System.Drawing.Size(61, 13);
             this.label_log.TabIndex = 4;
@@ -326,21 +319,21 @@
             // 
             // textBox_img
             // 
-            this.textBox_img.Location = new System.Drawing.Point(75, 39);
+            this.textBox_img.Location = new System.Drawing.Point(75, 65);
             this.textBox_img.Name = "textBox_img";
             this.textBox_img.Size = new System.Drawing.Size(466, 20);
             this.textBox_img.TabIndex = 3;
             // 
             // textBox_log
             // 
-            this.textBox_log.Location = new System.Drawing.Point(75, 12);
+            this.textBox_log.Location = new System.Drawing.Point(75, 38);
             this.textBox_log.Name = "textBox_log";
             this.textBox_log.Size = new System.Drawing.Size(466, 20);
             this.textBox_log.TabIndex = 2;
             // 
             // button_img
             // 
-            this.button_img.Location = new System.Drawing.Point(547, 39);
+            this.button_img.Location = new System.Drawing.Point(547, 65);
             this.button_img.Name = "button_img";
             this.button_img.Size = new System.Drawing.Size(75, 23);
             this.button_img.TabIndex = 1;
@@ -350,7 +343,7 @@
             // 
             // button_log
             // 
-            this.button_log.Location = new System.Drawing.Point(547, 10);
+            this.button_log.Location = new System.Drawing.Point(547, 36);
             this.button_log.Name = "button_log";
             this.button_log.Size = new System.Drawing.Size(75, 23);
             this.button_log.TabIndex = 0;
@@ -368,15 +361,15 @@
             this.panel_extract.Controls.Add(this.selectedParametersTree);
             this.panel_extract.Controls.Add(this.label1);
             this.panel_extract.Controls.Add(this.fileParametersTree);
-            this.panel_extract.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_extract.Location = new System.Drawing.Point(0, 30);
+            this.panel_extract.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_extract.Location = new System.Drawing.Point(0, 0);
             this.panel_extract.Name = "panel_extract";
-            this.panel_extract.Size = new System.Drawing.Size(634, 356);
+            this.panel_extract.Size = new System.Drawing.Size(634, 386);
             this.panel_extract.TabIndex = 10;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(422, 26);
+            this.label2.Location = new System.Drawing.Point(422, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 23);
             this.label2.TabIndex = 3;
@@ -385,15 +378,15 @@
             // selectedParametersTree
             // 
             this.selectedParametersTree.CausesValidation = false;
-            this.selectedParametersTree.Location = new System.Drawing.Point(316, 67);
+            this.selectedParametersTree.Location = new System.Drawing.Point(337, 103);
             this.selectedParametersTree.Name = "selectedParametersTree";
-            this.selectedParametersTree.Size = new System.Drawing.Size(304, 263);
+            this.selectedParametersTree.Size = new System.Drawing.Size(285, 252);
             this.selectedParametersTree.TabIndex = 6;
             this.selectedParametersTree.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.selectedParametersTree_NodeMouseDoubleClick);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(98, 26);
+            this.label1.Location = new System.Drawing.Point(98, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 23);
             this.label1.TabIndex = 4;
@@ -402,9 +395,9 @@
             // fileParametersTree
             // 
             this.fileParametersTree.CausesValidation = false;
-            this.fileParametersTree.Location = new System.Drawing.Point(10, 67);
+            this.fileParametersTree.Location = new System.Drawing.Point(12, 103);
             this.fileParametersTree.Name = "fileParametersTree";
-            this.fileParametersTree.Size = new System.Drawing.Size(300, 263);
+            this.fileParametersTree.Size = new System.Drawing.Size(290, 252);
             this.fileParametersTree.TabIndex = 5;
             this.fileParametersTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.fileParametersTree_AfterSelect);
             this.fileParametersTree.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.fileParametersTree_MouseDoubleClick);
@@ -415,8 +408,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 386);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel_geo);
             this.Controls.Add(this.panel_extract);
+            this.Controls.Add(this.panel_geo);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "TLogDataExtractor + Geotag";
@@ -439,7 +432,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;

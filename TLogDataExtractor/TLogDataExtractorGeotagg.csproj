@@ -8,10 +8,11 @@
     <ProjectGuid>{679967D3-4C60-4F91-B1A2-6362B52D5ACF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TLogDataExtractor</RootNamespace>
-    <AssemblyName>TLogDataExtractor</AssemblyName>
+    <RootNamespace>TLogDataExtractorGeotagg</RootNamespace>
+    <AssemblyName>TLogDataExtractorGeotagg</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>C:\Users\andrew\Desktop\tmp\</PublishUrl>
@@ -105,7 +106,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">

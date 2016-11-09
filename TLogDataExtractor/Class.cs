@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TLogDataExtractor
+namespace TLogDataExtractorGeotagg
 {
     public class Rational
     {

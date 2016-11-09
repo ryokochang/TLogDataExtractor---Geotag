@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TLogDataExtractor
+namespace TLogDataExtractorGeotagg
 {
     public partial class help : Form
     {
